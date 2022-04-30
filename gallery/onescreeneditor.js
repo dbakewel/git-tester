@@ -19,15 +19,12 @@ var context; //2d context element of canvas
 var cntrlIsPressed = false;
 var mouseIsDown = false;
 var zoomIsDown = false;
-var mouseDownX;
-var mouseDownY;
 var pinchStartDistance = false;
 var pinchStartMag;
 var pinchCenterX;
 var pinchCenterY;
 
 //Selected image index
-var selected = 0;
 var multiselected = []; //other selected images.
 var removeOnUp = -1; //multielect element to remove on mouse up.
 //x,y of clicke point inside image while mouse is down.
@@ -258,7 +255,9 @@ function drawToolBar() {
 
 		context.beginPath();
 		context.arc(zoomTickX,canvas.height-tbHeight/2,tbHeight/4,0,2*Math.PI);
+		/* another commetn */
 		context.stroke();
+
 		context.closePath();
 	}
 
