@@ -19,9 +19,6 @@ public class FileSystemCollector {
 	public float maxDepth = 0;
 	public float maxDirHeight = 0;
 	public float maxFileHeight = 0;
-	public float maxLevel = 0;
-	public long dirCollected = 0;
-	public long fileCollected = 0;
 	public long lengthCollected = 0;
 	public bool abortThread = false;
 
@@ -279,6 +276,8 @@ public class FileSystemCollector {
 			dd.triangles [dtindex++] = dvindex - 4; 
 			dd.triangles [dtindex++] = dvindex - 1;
 			dd.triangles [dtindex++] = dvindex - 2;
+			Array.Resize(ref fd.vertices, fvindex);
+			Array.Resize(ref fd.triangles, ftindex);
 		}
 
 		//add first eight dir vertices of first segment
