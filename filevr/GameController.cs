@@ -8,7 +8,9 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 	[Header("Objects")]
 	[Tooltip("Root of all file system objects.")]
+	
 	public GameObject fileSystemRoot;
+
 	[Tooltip("Text object of the sceeen from the left controller.")]
 	public Text screenTitle;
 	public Text screenLeft;
@@ -20,6 +22,10 @@ public class GameController : MonoBehaviour {
 	public GameObject dirHL;
 	[Tooltip("Text object from the file dialog.")]
 	public Text folderPath;
+	public Text screenTitle;
+	public Text screenLeft;
+	public Text screenRight;
+	public Text screenAlert;
 
 	[Header("Controller Objects")]
 	[Tooltip("Plane Pointer from the right controller")]
