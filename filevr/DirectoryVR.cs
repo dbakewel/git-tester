@@ -99,7 +99,7 @@ public class DirectoryVR {
 		float BufferDistance = (startFrontDegree - startDegree) * Mathf.Deg2Rad * radius;
 		float BufferAngle = 1 / (radius + depth) * Mathf.Rad2Deg * BufferDistance;
 		this.startBackDegree = startDegree + BufferAngle;
-
+		// Hey this is a randome comment.
 		BufferDistance = (endDegree - endFrontDegree) * Mathf.Deg2Rad * radius;
 		BufferAngle = 1 / (radius + depth) * Mathf.Rad2Deg * BufferDistance;
 		this.endBackDegree = endDegree - BufferAngle;
